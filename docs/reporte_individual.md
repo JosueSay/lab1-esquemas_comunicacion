@@ -13,26 +13,30 @@ header-includes:
 geometry: top=0.67in, bottom=0.67in, left=0.85in, right=0.85in
 --- -->
 
-# Introducción a Wireshark
+# Reporte Individual - Introducción a Wireshark
+
+Esta parte fue individual y consistió en configurar el entorno de Wireshark, capturar paquetes de red, y realizar un análisis detallado del protocolo HTTP.
+
+## Identificación
+
+- Josué Say - 22801
 
 ## 1.1 Personalización del entorno
 
 En esta primera fase, se realizó la personalización del entorno de Wireshark para adaptarlo a nuestras preferencias de uso. A continuación, se detallan las acciones realizadas:
 
-- Se creó un nuevo perfil con el nombre del estudiante.
+- Se creó un nuevo perfil.
 - Se descargó y abrió el archivo de captura desde [Cloudshark](https://www.cloudshark.org/captures/e6fb36096dbb).
-- Se aplicó el formato de tiempo **Time of Day** para visualizar la hora completa de cada paquete capturado.
+- Se aplicó el formato de tiempo **Time of Day**.
 - Se añadió una nueva columna denominada `Length Protocol`.
 
 ![Personalización del Entorno 1](../images/p1-1.png)
 
 Además:
 
-- Se aplicó un **esquema de paneles personalizado** para modificar la disposición de los paneles (diferente del valor por defecto).
+- Se aplicó un **esquema de paneles personalizado** (diferente del valor por defecto).
 - Se creó una **regla de color** para resaltar los paquetes TCP con la bandera SYN activa (`SYN = 1`), asignando un color distintivo para facilitar su identificación.
 - Se añadió un **botón de filtro** que permite activar rápidamente el filtro correspondiente a paquetes TCP con `SYN = 1`.
-
-Esto permitió un entorno visual más organizado y funcional para el análisis de tráfico.
 
 ![Personalización del Entorno 2](../images/p1-2.png)
 
@@ -127,7 +131,7 @@ Para esta sección, se realizó una captura de tráfico HTTP con el fin de respo
 
 Durante el desarrollo del laboratorio se exploraron distintas funcionalidades de Wireshark, desde la personalización del entorno hasta la configuración avanzada de captura con ring buffer. Una dificultad clave fue entender cómo Wireshark gestiona los archivos rotativos: aunque se configura un límite de archivos, los nombres siguen aumentando, lo que puede generar confusión. Además, se identificó que Wireshark no detiene la captura automáticamente bajo estas condiciones, por lo que es responsabilidad del usuario controlarlo manualmente. El análisis HTTP permitió ver claramente cómo interactúan cliente y servidor, y cómo se puede extraer información clave de los encabezados, como versión del protocolo, idiomas aceptados o tamaño del contenido.
 
-## Conclusiones
+## Comentario
 
 La experiencia permitió familiarizarse con herramientas reales de monitoreo de red, aplicando configuraciones prácticas como el uso de tshark para automatizar capturas. Se comprobó que el ring buffer es ideal para capturas prolongadas, ya que permite conservar solo los archivos más recientes y controlar el uso de almacenamiento. Además, el análisis de tráfico HTTP mostró cómo Wireshark puede revelar detalles útiles de las comunicaciones web. Por último, se comprendió que, para diagnósticos de rendimiento, capturar en múltiples puntos de la red (cliente, servidor, gateway) proporciona un panorama más completo del problema.
 

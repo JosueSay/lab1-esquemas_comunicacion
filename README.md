@@ -1,4 +1,4 @@
-# Laboratorio 1 - Esquemas de comunicación
+# Laboratorio 1 - Esquemas de comunicación 🧪
 
 Este repositorio contiene los reportes y archivos generados durante el desarrollo del laboratorio enfocado en **la transmisión de información y el análisis de paquetes con Wireshark**. El trabajo fue dividido en dos partes: una actividad grupal de comunicación entre parejas y una introducción individual al uso de Wireshark.
 
