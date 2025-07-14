@@ -1,4 +1,4 @@
----
+<!-- ---
 header-includes:
   - \usepackage{amsmath}
   - \usepackage{amssymb}
@@ -11,7 +11,7 @@ header-includes:
   - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
   - \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
 geometry: top=0.67in, bottom=0.67in, left=0.85in, right=0.85in
----
+--- -->
 
 # Introducción a Wireshark
 
@@ -24,7 +24,7 @@ En esta primera fase, se realizó la personalización del entorno de Wireshark p
 - Se aplicó el formato de tiempo **Time of Day** para visualizar la hora completa de cada paquete capturado.
 - Se añadió una nueva columna denominada `Length Protocol`.
 
-![Personalización del Entorno 1](../images/p1-1.png){height=240px}
+![Personalización del Entorno 1](../images/p1-1.png)
 
 Además:
 
@@ -34,11 +34,11 @@ Además:
 
 Esto permitió un entorno visual más organizado y funcional para el análisis de tráfico.
 
-![Personalización del Entorno 2](../images/p1-2.png){height=240px}
+![Personalización del Entorno 2](../images/p1-2.png)
 
-![Personalización del Entorno 3](../images/p1-3.png){height=240px}
+![Personalización del Entorno 3](../images/p1-3.png)
 
-![Personalización del Entorno 4](../images/p1-4.png){height=240px}
+![Personalización del Entorno 4](../images/p1-4.png)
 
 ## 1.2 Configuración de la captura de paquetes
 
