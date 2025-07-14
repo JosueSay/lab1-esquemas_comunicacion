@@ -8,8 +8,11 @@ Este repositorio contiene los reportes y archivos generados durante el desarroll
 .
 ├── README.md
 ├── data/
-│   ├── Wireshark_Masterclass_Lesson1_Setup.pcapng
+│   └── Wireshark_Masterclass_Lesson1_Setup.pcapng
+├── data1/
 │   └── Archivos de captura (.pcapng)
+├── data2/
+│   └── Archivo de captura para enlace dado (.pcapng)
 ├── docs/
 │   ├── reporte_grupal.md
 │   └── reporte_individual.md
